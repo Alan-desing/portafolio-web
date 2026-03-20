@@ -1,1 +1,65 @@
-<h1>hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- navbar -->
+  <header class="bg-gray-900 text-white w-full top-0 z-50">
+    <nav class="flex justify-between items-center px-6 py-4">
+
+      <h1 class="font-bold text-lg">Portfolio</h1>
+
+      <!-- boton hamburguesa -->
+      <button id="btn-menu" class="md:hidden text-2xl">☰</button>
+
+      <!-- menu -->
+      <ul id="menu" class="hidden flex-col absolute top-16 left-0 w-full bg-gray-800 md:static md:flex md:flex-row md:w-auto md:bg-transparent md:gap-6">
+        <li><a href="#inicio" class="block p-3 md:p-0 hover:text-blue-400">Inicio</a></li>
+        <li><a href="#galeria" class="block p-3 md:p-0 hover:text-blue-400">Galería</a></li>
+        <li><a href="#videos" class="block p-3 md:p-0 hover:text-blue-400">Videos</a></li>
+        <li><a href="#calculadora" class="block p-3 md:p-0 hover:text-blue-400">Calculadora</a></li>
+        <li><a href="#contacto" class="block p-3 md:p-0 hover:text-blue-400">Contacto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- contenido -->
+  <main class="pt-20">
+
+    <section id="inicio" class="p-6 min-h-screen">
+      <h2 class="text-xl font-semibold">Inicio</h2>
+    </section>
+
+    <section id="galeria" class="p-6 min-h-screen">
+      <h2 class="text-xl font-semibold">Galería</h2>
+    </section>
+
+    <section id="videos" class="p-6 min-h-screen">
+      <h2 class="text-xl font-semibold">Videos</h2>
+    </section>
+
+    <section id="calculadora" class="p-6 min-h-screen">
+      <h2 class="text-xl font-semibold">Calculadora</h2>
+    </section>
+
+    <section id="contacto" class="p-6 min-h-screen">
+      <h2 class="text-xl font-semibold">Contacto</h2>
+    </section>
+
+  </main>
+
+  <script src="javascript/menu.js" defer></script>
+
+</body>
+</html>
