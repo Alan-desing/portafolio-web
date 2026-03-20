@@ -1,3 +1,4 @@
+//js para que se abra un modal al tocal la imagen
 const imagenes = document.querySelectorAll(".galeria-img");
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
