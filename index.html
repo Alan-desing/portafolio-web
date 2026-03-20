@@ -164,6 +164,60 @@
 
     <section id="contacto" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
       <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+
+       <form id="formulario" class="w-full max-w-md space-y-4">
+
+        <!-- nombre -->
+        <div>
+          <input 
+            type="text" 
+            id="nombre" 
+            placeholder="Nombre"
+            class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700"
+          >
+          <p id="error-nombre" class="text-red-400 text-sm hidden">El nombre es obligatorio</p>
+        </div>
+
+        <!-- email -->
+        <div>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="Email"
+            class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700"
+          >
+          <p id="error-email" class="text-red-400 text-sm hidden">Email inválido</p>
+        </div>
+
+        <!-- asunto -->
+        <div>
+          <input 
+            type="text" 
+            id="asunto" 
+            placeholder="Asunto"
+            class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700"
+          >
+          <p id="error-asunto" class="text-red-400 text-sm hidden">El asunto es obligatorio</p>
+        </div>
+
+        <!-- mensaje -->
+        <div>
+          <textarea 
+            id="mensaje" 
+            placeholder="Mensaje"
+            class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700"
+          ></textarea>
+          <p id="error-mensaje" class="text-red-400 text-sm hidden">El mensaje es obligatorio</p>
+        </div>
+
+        <!-- botón -->
+    <button type="submit" class="w-full bg-blue-600 p-2 rounded hover:bg-blue-500">Enviar</button>
+
+    <!-- respuesta -->
+    <p id="respuesta" class="text-center mt-2"></p>
+
+       </form>
+
     </section>
 
   </main>
@@ -171,6 +225,7 @@
   <script src="javascript/menu.js" defer></script>
   <script src="javascript/galeria.js" defer></script>
   <script src="javascript/calculadora.js" defer></script>
+  <script src="javascript/formulario.js" defer></script>
 
 </body>
 </html>
