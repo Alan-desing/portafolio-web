@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-900 text-white">
 
   <!-- navbar -->
-  <header class="bg-gray-900 text-white w-full top-0 z-50">
+  <header class="bg-black text-white w-full top-0 z-50">
     <nav class="flex justify-between items-center px-6 py-4">
 
       <h1 class="font-bold text-lg">Portfolio</h1>
@@ -35,31 +35,51 @@
   </header>
 
   <!-- contenido -->
-  <main class="pt-20">
+  <main class="pt-20 ">
 
-    <section id="inicio" class="p-6 min-h-screen">
-      <h2 class="text-xl font-semibold">Inicio</h2>
+    <section id="inicio" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Inicio</h2>
     </section>
 
-    <section id="galeria" class="p-6 min-h-screen">
-      <h2 class="text-xl font-semibold">Galería</h2>
+    <!-- seccion galeria de imagenes -->
+    <section id="galeria" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Galería</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      
+        <img src="img/img1.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+        <img src="img/img2.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+        <img src="img/img3.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+        <img src="img/img4.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+        <img src="img/img5.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+        <img src="img/img6.png" class="galeria-img w-full h-40 object-cover cursor-pointer">
+
+       </div>
+
     </section>
 
-    <section id="videos" class="p-6 min-h-screen">
-      <h2 class="text-xl font-semibold">Videos</h2>
+    <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center">
+
+        <img id="modal-img" class="max-w-[90%] max-h-[90%]">
+        
+    </div>
+
+    <section id="videos" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Videos</h2>
     </section>
 
-    <section id="calculadora" class="p-6 min-h-screen">
-      <h2 class="text-xl font-semibold">Calculadora</h2>
+    <section id="calculadora" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Calculadora</h2>
     </section>
 
-    <section id="contacto" class="p-6 min-h-screen">
-      <h2 class="text-xl font-semibold">Contacto</h2>
+    <section id="contacto" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Contacto</h2>
     </section>
 
   </main>
 
   <script src="javascript/menu.js" defer></script>
+  <script src="javascript/galeria.js" defer></script>
 
 </body>
 </html>
